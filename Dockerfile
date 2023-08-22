@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt && pip install uvicorn
+RUN pip install -r requirements.txt
 
 
 CMD ["sh", "runserver.sh"]

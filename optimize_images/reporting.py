@@ -100,7 +100,7 @@ def show_final_report(found_files: int,
         f"\n   Average savings: {human(average)} per optimized file" \
         f"\n   Total space saved: {human(bytes_saved)} / {percent:.1f}%\n"
 
-    return f"Processed {found_files} files ({human(src_size)}) - Total space saved: {human(bytes_saved)} / {percent:.1f}%"
+    return f"✅ Đã xử lý {found_files} files ({human(src_size)}) - Tổng dung lượng đã giảm: {human(bytes_saved)} 🔻 {percent:.1f}% - Dung lượng còn lại: {human(src_size - bytes_saved)}"
 
 
 def show_img_exception(exception: Exception, image_path: str, details: str = '') -> None:
